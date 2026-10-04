@@ -16,7 +16,8 @@ h1 {
 nav {
     color: white;
     background-color: rgb(41, 41, 41);
-    justify-content: right;
+    height: 80px;
+    justify-content: center;
 }
 ul {
     margin: 0;
@@ -28,10 +29,13 @@ a {
     color: white;
 }
 li  {
-    padding: 20px;
+    padding: 25px;
     display: inline-flex;
     list-style: none;
     
+}
+a:hover {
+    transform: scale(1.05);
 }
 #bloco {
         margin: 20px;
@@ -54,7 +58,6 @@ li  {
     border: 2px solid #898481;
     background-color: rgb(148, 148, 148);
 }
-
 .btn-mine button:hover {
      cursor: pointer;
     color: #ffffff;
@@ -164,7 +167,7 @@ form {
 .texto-medio {
     margin-left: 20px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .texto {
     margin: 0;
@@ -172,13 +175,10 @@ form {
     font-family: "VT323";
     font-size: 150%;
 }
-#nav-final {
-    padding: 30px;
-}
 #nav-final ul {
     margin: 0;
     margin-right: 20px;
-    text-align: start;
+    text-align: center;
 }
 
 @media screen and (max-width: 1150px) {
@@ -187,5 +187,47 @@ form {
     }
     #img {
         margin-top: 50px;
+    }
+    #nav-final {
+        height: 100px;
+        
+    }
+    #nav-final ul {
+        text-align: left;
+    }
+    #nav-final li{
+        margin-top: 15px;
+        padding: 5px;
+        
+    }
+}
+@media screen and (max-width: 630px) {
+    form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section{
+        text-align: left;
+    }
+    .texto{
+        margin-right: 50px;
+    }
+    #bloco {
+        scale: 0.7;
+        margin: 0;
+    }
+    footer{
+        background-color: rgb(63, 63, 63);
+        padding: 0;
+    }
+    #nav-final {
+        height: 100px;
+    }
+    #nav-final ul {
+        text-align: left;
+    }
+    #nav-final li{
+        margin-top: 15px;
+        padding: 0px;
+        
     }
 }
